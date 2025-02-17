@@ -68,6 +68,74 @@ public class Elagazas {
         else{
             System.out.printf("A %d nagyobb, mint %d", a, b);
         }
+        
+        // Logikai műveletek
+        /*
+        !: tagadás, nem -> SHIFT 4
+        &&: logikai ÉS -> ALTGR C
+        ||: logikai VAGY -> ALTGR W
+        */
+        
+        // (2 > 3) && (3 > 2) => HAMIS
+        // (3 > 2) || (2 > 3) => IGAZ
+        
+        int egesz = 30;
+        if(egesz % 10 == 0 && egesz % 3 == 0){
+            System.out.println("A 30 osztható 10-zel és 3-mal maradéknélkül.\n");
+        }
+        else{
+            System.out.println("A 30 nem osztható maradéknélkül 10-zel és 3-mal.\n");
+        }
+        
+        egesz = 27;
+        if(egesz % 10 == 0 || egesz % 3 == 0){
+            System.out.println("A 27 oszható 10-zel vagy 3-mal maradéknélkül.");
+        }
+        else{
+            System.out.println("A 27 nem osztható maradéknélkül 10-zel és 3-mal sem.");
+        }
+        
+        // Egybeágyazott elágazások
+        /*
+        if(){
+            
+        }
+        else{
+            if()
+            {
+                
+            }
+            else{
+                if()
+                {
+                    
+                }
+            }
+        }
+        */
+        
+        // Célszerű - if - else if - else
+        double szazalek = 60.0;
+        // 0-39 elégtelen
+        // 40-49 elégséges
+        // 50-59 közepes
+        // 60-79 jó
+        // 80-100 jeles
+        if(szazalek >= 80){
+            System.out.println("Jeles");
+        }
+        else if(szazalek >= 60 && szazalek < 80){
+            System.out.println("Jó");
+        }
+        else if(szazalek >= 50 && szazalek < 60){
+            System.out.println("Közepes");
+        }
+        else if(szazalek >= 40 && szazalek < 50){
+            System.out.println("Elégséges");
+        }
+        else{
+            System.out.println("Elégtelen");
+        }
     }
     
 }
