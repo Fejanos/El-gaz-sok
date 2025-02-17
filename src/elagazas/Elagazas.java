@@ -136,6 +136,34 @@ public class Elagazas {
         else{
             System.out.println("Elégtelen");
         }
+        
+        // Ternáris operátor
+        // (feltétel) ? igaz : hamis
+        boolean res = (szazalek % 2 == 0); // true | false
+        // true = Páros | false = Páratlan
+        String eredmeny = (szazalek % 2 == 0) ? "Páros" : "Páratlan";
+        System.out.println(eredmeny);
+        
+        // Esetszétválasztás - Switch-case
+        String honap = "Február";
+        // switch(egyenlőség)
+        switch(honap){
+            // if(honap == "Január")
+            case "Január":
+                System.out.println("01");
+                break;
+            // else if(honap == "Február")
+            case "Február":
+                System.out.println("02");
+                break;
+            // else if(honap == "Március")
+            case "Március":
+                System.out.println("03");
+                break;
+            // else ág
+            default:
+                System.out.println("Nincs ilyen hónap");
+        }
     }
     
 }
